@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="uz"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Ijara-test</title>
+    <link rel="stylesheet" href="css/style.css"></head>
+    <body><div class="topbar">
+        <div class="container"><div>☎ <span data-phone>
+         
+        </span> &nbsp; ✉ <span data-email>
+
+        </span> &nbsp; Test Ishonch telefoni: 
+        <span data-hotline></span>
+    </div><div> test, &nbsp; tilni tanlash, &nbsp;marka</div></div></div>
+    <header><div class="container header-main">
+        <a class="brand" href="index.html" style="text-decoration:none">
+            <div class="logo"><span>D</span></div><div class="brand-text">
+                <b data-site-name>Markaz.uz</b>
+                <small>Davlat mulkini ijaraga berish yagona portali</small>
+            </div></a><div><a class="btn btn-outline" href="pages/login.html">Kirish</a> 
+                            <a class="btn btn-gold" href="pages/admin.html">Admin panel</a>
+        </div></div>
+    </header>
+    <nav>
+        <div class="container">
+            <a href="index.html">Bosh sahifa</a>
+                    <a href="pages/objects.html">Ijara berilgan obyektlar</a>
+            <a href="#">E-auksion</a>
+            <a href="pages/services.html">Interaktiv xizmatlar</a>
+            <a href="pages/docs.html">Normativ hujjatlar</a>
+            <a href="pages/news.html">Yangiliklar</a>
+            <a href="#">Markaz haqida</a>
+            <a href="#">Bog‘lanish</a>
+        </div>
+    </nav>
+    <div class="hero">
+        <div class="container">
+            <div class="sec-eyebrow">Raqamli O‘zbekiston — 2030 </div>
+            <h1>Davlat mulkini ijaraga olish —
+                <span class="word-rotator">
+                <em>oson</em>
+                <em>shaffof</em>
+                <em>Onlayn</em>
+            </span> 
+            </h1>
+            <p>Bo‘sh turgan davlat obyektlarini toping, elektron auksionda ishtirok eting va ijara shartnomasini rasmiylashtiring.</p>
+            <div class="hero-stats"><div>
+                <strong>4 820+</strong>
+                <span>Ijaraga taklif etilayotgan obyektlar</span>
+            </div>
+            <div>
+                <strong>12 340</strong>
+                <span>Amaldagi ijara shartnomalari</span>
+            </div>
+            <div>
+                <strong>14</strong>
+                <span>Hudud bo‘yicha qamrov</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container search-wrap">
+    <div class="search">
+        <h2>Ijara obyektini qidirish</h2>
+        <div class="search-row">
+            <div class="field">
+                <label>Hudud</label>
+                <select id="region">
+                    <option value="">Barcha hududlar</option>
+                    <option value="">Qoraqalpog'iston Respublikasi</option>
+                    <option value="">Andijon viloyatii </option>
+                    <option value="">Buxoro viloyati</option>
+                    <option value="">Jizzax viloyati</option>
+                    <option value="">Qashqadaryo viloyati</option> 
+                </select>
+            </div>
+            <div class="field">
+                <label>Obyekt turi</label>
+                <select id="type">
+                    <option value="">Barchasi</option>
+                </select>
+            </div>
+            <div class="field"><label>Qidiruv</label>
+                <input id="query" placeholder="Nom yoki hudud...">
+            </div>
+            <div>
+
+            </div>
+            <button class="search-btn" onclick="location.href='pages/objects.html'">Qidirish →</button>
+        </div></div></div><section><div class="container">
+            <div class="sec-head"><div>
+                <div class="sec-eyebrow">Jarayon</div>
+                <div class="sec-title">Qanday ijaraga olinadi?</div></div></div>
+            <div class="steps">
+                <div class="step">
+                    <div class="num-circle">1</div>
+                    <h3>Obyektni tanlang</h3>
+                    <p>Hudud, tur va maydon bo‘yicha mos obyektni toping.</p>
+                </div><div class="step">
+                    <div class="num-circle">2</div>
+                    <h3>Auksionda qatnashing</h3>
+                    <p>Onlayn savdoda ishtirok eting.</p>
+                </div>
+                <div class="step">
+                    <div class="num-circle">3</div>
+                    <h3>Shartnoma tuzing</h3>
+                    <p>Shartnoma elektron imzo bilan imzolanadi.</p>
+                </div>
+                <div class="step">
+                    <div class="num-circle">4</div>
+                    <h3>To‘lovni amalga oshiring</h3>
+                    <p>To‘lovlarni shaxsiy kabinet orqali kuzating.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="lots-sec">
+        <div class="container">
+            <div class="sec-head">
+                <div>
+                    <div class="sec-eyebrow">Dolzarb takliflar</div>
+                    <div class="sec-title">Yangi qo‘yilgan obyektlar</div>
+                </div>
+                <a class="sec-link" href="pages/objects.html">Barcha obyektlar →</a>
+            </div>
+            <div class="lots" id="lots"></div>
+        </div>
+    </section>
+    <section><div class="container">
+        <div class="sec-head"><div>
+            <div class="sec-eyebrow">Onlayn xizmatlar</div>
+            <div class="sec-title">Interaktiv xizmatlar</div>
+        </div>
+    </div>
+    <div class="services">
+        <div class="svc">
+            <h3>Ijara kalkulyatori</h3>
+            <p>Taxminiy ijara to‘lovini hisoblang.</p>
+        </div><div class="svc">
+            <h3>Eng kam stavkalar</h3>
+            <p>Joriy yil stavkalarini ko‘ring.</p>
+        </div><div class="svc">
+            <h3>Ariza yuborish</h3>
+            <p>Obyektni ijaraga chiqarish bo‘yicha taklif yuboring.</p>
+        </div><div class="svc">
+            <h3>Shartnoma holati</h3>
+            <p>Shartnoma holatini tekshiring.</p>
+        </div></div></div></section><div class="band">
+            <div class="container">
+                <div class="cell">
+                    
+                    <strong>1,2 trln</strong>
+                    <span>2025-yilda ijara to‘lovlari</span>
+                </div><div class="cell"><strong>98%</strong>
+                    <span>Elektron shartnomalar</span>
+                </div><div class="cell"><strong>3 kun</strong>
+                    <span>O‘rtacha savdoga chiqarish muddati</span>
+                </div><div class="cell"><strong>24/7</strong>
+                    <span>Portal xizmatlari</span>
+                </div>
+            </div>
+        </div>
+        <section>
+            <div class="container split"><div>
+                <div class="sec-head"><div>
+                    <div class="sec-eyebrow">Matbuot markazi</div>
+                    <div class="sec-title">Yangiliklar</div>
+                </div>
+                <a class="sec-link" href="pages/news.html">Barchasi →</a>
+            </div>
+            <div class="news" id="news">
+
+            </div>
+        </div>
+        <div class="docs">
+            <h2>Normativ hujjatlar</h2>
+            <div id="docs"></div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <div class="f-grid"><div>
+            <h3 data-site-name>Matkaz.ijara.</h3>
+            <p>Davlat mulki obyektlaridan samarali foydalanish bo‘yicha rasmiy portal.</p>
+            <p>Call-markaz: 
+                <b data-hotline>1082</b>
+            </p>
+        </div>
+        <div>
+            <h4>Portal</h4>
+            <a href="pages/objects.html">Ijara obyektlari</a>
+            <a href="pages/services.html">Interaktiv xizmatlar</a>
+            <a href="pages/docs.html">Normativ hujjatlar</a>
+        </div>
+        <div>
+            <h4>Foydali havolalar</h4>
+            <a href="#">davaktiv.uz</a>
+            <a href="#">e-auksion.uz</a>
+            <a href="#">my.gov.uz</a>
+            <a href="#">lex.uz</a>
+        </div>
+        <div>
+            <h4>Bog‘lanish</h4>
+            <p>100000, Toshkent sh.</p>
+            <p data-phone></p>
+            <p data-email></p>
+        </div>
+    </div>
+    <div class="f-bottom">
+        <span>© 2026 Davijara.uz</span>
+        <span>Ochiq ma’lumotlar · Maxfiyliklar siyosati</span>
+    </div>
+</div>
+</footer>
+<script src="js/app.js"></script>
+</body>
+</html>
+<!--
+                # Davijara tizimining oddiy namunasi
+
+# Foydalanuvchilar
+users = []
+
+# Davlat mulki obyektlari
+objects = [
+    {
+        "id": 1,
+        "name": "Bo'sh bino",
+        "region": "Toshkent shahri",
+        "address": "Chilonzor tumani",
+        "area": 120,
+        "price": 5000000
+    },
+    {
+        "id": 2,
+        "name": "Noturar joy",
+        "region": "Navoiy viloyati",
+        "address": "Navoiy shahri",
+        "area": 85,
+        "price": 2500000
+    },
+    {
+        "id": 3,
+        "name": "Savdo do'koni",
+        "region": "Samarqand viloyati",
+        "address": "Samarqand shahri",
+        "area": 60,
+        "price": 3000000
+    }
+]
+
+# Arizalar
+applications = []
+
+
+# RO'YXATDAN O'TISH
+def register():
+    print("\n--- RO'YXATDAN O'TISH ---")
+
+    username = input("Login kiriting: ")
+    password = input("Parol kiriting: ")
+
+    user = {
+        "username": username,
+        "password": password
+    }
+
+    users.append(user)
+
+    print("Ro'yxatdan o'tish muvaffaqiyatli amalga oshirildi!")
+
+
+# TIZIMGA KIRISH
+def login():
+    print("\n--- TIZIMGA KIRISH ---")
+
+    username = input("Login: ")
+    password = input("Parol: ")
+
+    for user in users:
+        if user["username"] == username and user["password"] == password:
+            print("Tizimga muvaffaqiyatli kirdingiz!")
+            return username
+
+    print("Login yoki parol noto'g'ri!")
+    return None
+
+
+# OBYEKTLARNI KO'RISH
+def show_objects():
+    print("\n--- DAVLAT MULKI OBYEKTLARI ---")
+
+    for obj in objects:
+        print("-------------------------")
+        print("ID:", obj["id"])
+        print("Nomi:", obj["name"])
+        print("Hudud:", obj["region"])
+        print("Manzil:", obj["address"])
+        print("Maydoni:", obj["area"], "kv.m")
+        print("Ijara narxi:", obj["price"], "so'm")
+
+
+# HUDUD BO'YICHA QIDIRISH
+def search_by_region():
+    region = input("\nHudud nomini kiriting: ")
+
+    found = False
+
+    for obj in objects:
+        if region.lower() in obj["region"].lower():
+            print("-------------------------")
+            print("ID:", obj["id"])
+            print("Nomi:", obj["name"])
+            print("Hudud:", obj["region"])
+            print("Manzil:", obj["address"])
+            print("Maydoni:", obj["area"], "kv.m")
+            print("Ijara narxi:", obj["price"], "so'm")
+
+            found = True
+
+    if found == False:
+        print("Bunday hududda obyekt topilmadi.")
+
+
+# ARIZA YUBORISH
+def send_application(username):
+    object_id = int(input("\nAriza bermoqchi bo'lgan obyekt ID sini kiriting: "))
+
+    for obj in objects:
+        if obj["id"] == object_id:
+
+            application = {
+                "username": username,
+                "object": obj["name"],
+                "status": "Ko'rib chiqilmoqda"
+            }
+
+            applications.append(application)
+
+            print("Ariza muvaffaqiyatli yuborildi!")
+            return
+
+    print("Bunday ID li obyekt topilmadi.")
+
+
+# SHAXSIY KABINET
+def personal_cabinet(username):
+    print("\n--- SHAXSIY KABINET ---")
+
+    found = False
+
+    for application in applications:
+        if application["username"] == username:
+
+            print("-------------------------")
+            print("Obyekt:", application["object"])
+            print("Holati:", application["status"])
+
+            found = True
+
+    if found == False:
+        print("Sizda hozircha arizalar mavjud emas.")
+
+
+# ASOSIY DASTUR
+def main():
+
+    while True:
+
+        print("\n==============================")
+        print("DAVIJARA TIZIMI")
+        print("==============================")
+
+        print("1. Ro'yxatdan o'tish")
+        print("2. Tizimga kirish")
+        print("3. Obyektlarni ko'rish")
+        print("4. Hudud bo'yicha qidirish")
+        print("5. Dasturdan chiqish")
+
+        choice = input("\nTanlang: ")
+
+        if choice == "1":
+            register()
+
+        elif choice == "2":
+
+            username = login()
+
+            if username:
+
+                while True:
+
+                    print("\n--- SHAXSIY KABINET ---")
+                    print("1. Obyektlarni ko'rish")
+                    print("2. Hudud bo'yicha qidirish")
+                    print("3. Ariza yuborish")
+                    print("4. Mening arizalarim")
+                    print("5. Chiqish")
+
+                    user_choice = input("\nTanlang: ")
+
+                    if user_choice == "1":
+                        show_objects()
+
+                    elif user_choice == "2":
+                        search_by_region()
+
+                    elif user_choice == "3":
+                        send_application(username)
+
+                    elif user_choice == "4":
+                        personal_cabinet(username)
+
+                    elif user_choice == "5":
+                        break
+
+        elif choice == "3":
+            show_objects()
+
+        elif choice == "4":
+            search_by_region()
+
+        elif choice == "5":
+            print("Dastur tugatildi.")
+            break
+
+        else:
+            print("Noto'g'ri tanlov!")
+
+
+main()
+            -->

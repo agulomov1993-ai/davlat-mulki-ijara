@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "title": "Noturar joy binosi, 1-qavat, alohida kirish",
+    "region": "Toshkent shahri",
+    "district": "Yakkasaroy tumani",
+    "type": "Noturar joy binosi",
+    "area": "126",
+    "price": "86,4 mln so‘m",
+    "status": "Auksionda",
+    "image": "🏢"
+  },
+  {
+    "id": 2,
+    "title": "Ishlab chiqarish ombori, temir yo‘l tarmog‘iga yaqin",
+    "region": "Samarqand viloyati",
+    "district": "Kattaqo‘rg‘on tumani",
+    "type": "Ombor",
+    "area": "480",
+    "price": "124,0 mln so‘m",
+    "status": "Yangi lot",
+    "image": "🏭"
+  },
+  {
+    "id": 3,
+    "title": "Ma’muriy bino xonalari, ijtimoiy soha uchun",
+    "region": "Farg‘ona viloyati",
+    "district": "Farg‘ona shahri",
+    "type": "Ma’muriy bino",
+    "area": "92",
+    "price": "51,7 mln so‘m",
+    "status": "Auksionda",
+    "image": "🏛️"
+  },
+  {
+    "id": 4,
+    "title": "Bo‘sh turgan davlat obyekti",
+    "region": "Navoiy viloyati",
+    "district": "Zarafshon shahri",
+    "type": "Davlat obyekti",
+    "area": "350",
+    "price": "10 yilgacha tekin",
+    "status": "Imtiyozli",
+    "image": "🏢"
+  },
+  {
+    "id": 5,
+    "title": "IT yo‘nalishi uchun bo‘sh bino",
+    "region": "Toshkent shahri",
+    "district": "Yunusobod tumani",
+    "type": "Bino",
+    "area": "210",
+    "price": "1 yilgacha tekin",
+    "status": "Imtiyozli",
+    "image": "💻"
+  }
+]

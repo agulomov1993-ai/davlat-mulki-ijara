@@ -1,0 +1,631 @@
+/* =====================================================
+   CSS VARIABLES Mnosi Oddiy qilib aytganda, CSS Variables — saytdagi rang, o‘lcham, soya, shrift kabi qiymatlarni bir joyda saqlab, keyin kerakli joylarda qayta ishlatish imkonini beradi.
+===================================================== */
+:root {
+    --b9:#5b2dda; /* To‘q kulrang */
+    --b7:#1a3092;
+    --g:#fdfdfd;  /*Raqamli O‘zbekiston — 2030 rangi*/
+    --gl:#1f1601;
+    --t:#2E2E32;
+    --m:#0e0e0f;
+    --l:#f0f0f0;
+    --w:#110101;
+   }
+/* =====================================================
+   RESET
+===================================================== */
+* {
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+body {
+    font-family:Arial,sans-serif;
+    color:var(--t);
+}
+/* =====================================================
+   CONTAINER sayt malumotlarini  o'rtada turishi 
+===================================================== */
+.container{
+    max-width:1240px;
+    margin:auto;
+    padding:0 20px;
+}
+/* =====================================================
+   TOP BAR  Saytning eng yuqori qismi
+===================================================== */
+.topbar{ 
+    background:var(--b9); 
+    color:#fffefe;
+    font-size:17px
+}
+.topbar .container{ 
+    height:38px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center
+}
+.topbar span{
+    margin-right:16px
+}
+/* =====================================================
+   HEADER manosi 🏢 Logotip 🏠 Sayt nomi 📞 Telefon raqami 📧 Elektron pochta 🔐 Kirish / Ro'yxatdan o'tish 🌐 Til tanlash 📋 Navigatsiya menyusi
+===================================================== */
+header{
+    border-bottom:3px solid var(--g)
+}
+.header-main{
+    height:92px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center
+}
+.brand{
+    display:flex;
+    align-items:center;
+    gap:14px
+}
+.logo{
+    width:55px;
+    height:55px;
+    background:var(--b7);
+    transform:rotate(45deg);
+    border:2px solid var(--g);
+    border-radius:6px;
+    display:grid;
+    place-items:center
+}
+.logo span{
+    transform:rotate(-45deg);
+    color:#e3ce9c;
+    font-size:24px;
+    font-weight:bold
+}
+.brand-text b{
+    font: bold 24px Georgia;
+    color:var(--b7)
+}
+.brand-text small{
+    display:block;
+    color:var(--m);
+    letter-spacing:1px;
+    margin-top:4px
+}
+/* =====================================================
+   BUTTONS Masalan:
+
+Kirish
+Ro‘yxatdan o‘tish
+Qidirish
+Saqlash
+Yuborish
+O‘chirish
+Batafsil
+Yuklab olish
+===================================================== */
+.btn{
+    padding:12px 22px;
+    border-radius:6px;
+    font-weight:bold;
+    text-decoration:none;
+    display:inline-block
+}
+.btn-outline{
+    border:1px solid var(--b7);
+    color:var(--b7)
+}
+.btn-gold{
+    background:var(--g);
+    color:var(--b9)
+}
+/* =====================================================
+   NAVIGATION 🏠 Bosh sahifa 🏢 Markaz 🏠 Ijara 📰 Yangiliklar 📊 Ma'lumotlar 🛡️ Antikorrupsiya 📞 Bog‘lanish
+===================================================== */
+nav{
+    background:var(--b7)
+}
+nav .container{
+    display:flex;
+    flex-wrap:wrap
+}
+nav a{
+    padding:17px 20px;
+    color:#fff;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:14px
+}
+nav a:hover{
+    background:var(--b9);
+    color:#e3ce9c
+}
+/* =====================================================
+   HERO SECTION
+“Davlat mulki obyektlaridan samarali foydalanish” kabi asosiy yozuv;
+qisqacha ma'lumot;
+“Batafsil”, “Obyektlarni ko‘rish” kabi tugmalar;
+katta rasm yoki fon
+===================================================== */
+
+.hero{
+    background:linear-gradient(
+        115deg,
+        var(--b9),
+        var(--b7),
+        #8A2A3C);
+        padding:70px 0 100px;
+        color:#fff;
+        
+    }
+    .hero h1{
+        font:bold 50px/1.15 Georgia;
+        max-width:850px
+    }
+    .hero h1 em{
+        color:#e3ce9c;
+        font-style:normal
+    }
+    .hero p{
+        max-width:680px;
+        margin-top:22px;
+        font-size:17px;
+        line-height:1.6;
+        color:#f4e9e9
+    }
+    .hero-stats{
+        display:flex;
+        gap:70px;
+        margin-top:40px
+    }
+    .hero-stats strong{
+        display:block;
+        color:#e3ce9c;
+        font:bold 36px Georgia
+    }
+    .hero-stats span{
+        font-size:13px;
+        color:#ddd
+    }
+/* =====================================================
+   SEARCH
+obyekt nomini qidirish;
+hudud bo‘yicha qidirish;
+kadastr raqami bo‘yicha qidirish;
+ijara shartnomasini qidirish;
+yangiliklarni qidirish.
+===================================================== */
+
+    .search-wrap{
+        margin-top:-52px;
+        position:relative
+    }
+    .search{
+        background:#fff;
+        padding:28px;
+        border-radius:12px;
+        box-shadow:0 15px 40px #49212a30;
+        border-top:4px solid var(--g)
+    }
+    .search-row{
+        display:grid;
+        grid-template-columns:repeat(4,1fr) auto;
+        gap:14px
+    }
+    .field label{
+        display:block;
+        font-size:12px;
+        color:var(--m);
+        margin-bottom:7px
+    }
+    .field select,
+    .field input{
+        width:100%;
+        height:48px;
+        border:1px solid #d7d7da;
+        border-radius:6px;
+        padding:0 12px;
+        background:var(--l)
+    }
+    .search-btn{
+        height:48px;
+        border:0;
+        border-radius:6px;
+        padding:0 28px;
+        background:var(--b7);
+        color:#0de62a;
+        font-weight:bold;
+        cursor:pointer
+    }
+/* =====================================================
+   COMMON SECTIONS
+About → Biz haqimizda
+Services → Xizmatlar
+News → Yangiliklar
+FAQ → Ko‘p beriladigan savollar
+Contact → Bog‘lanish
+Statistics → Statistika
+Partners → Hamkorlar
+Testimonials → Foydalanuvchilar fikrlari
+===================================================== */
+    section{
+        padding:70px 0
+    }
+    .sec-head{
+        display:flex;
+        justify-content:space-between;
+        align-items:end;
+        margin-bottom:32px
+    }
+    .sec-eyebrow{
+        color:var(--g);
+        font-size:12px;
+        letter-spacing:3px;
+        text-transform:uppercase;
+        font-weight:bold;
+        margin-bottom:8px
+    }
+    .sec-title{
+        font:bold 34px Georgia;
+        color:var(--b9)
+    }
+    .sec-link{
+        color:var(--b7);
+        font-weight:bold;
+        text-decoration:none
+    }
+/* =====================================================
+   STEPS
+1️⃣ Obyektni qidirish
+       ↓
+2️⃣ Obyektni tanlash
+       ↓
+3️⃣ Ariza yuborish
+       ↓
+4️⃣ Auksionda ishtirok etish
+       ↓
+5️⃣ G‘olib bo‘lish
+       ↓
+6️⃣ Shartnoma tuzish
+===================================================== */
+    .steps,
+    .services,
+    .lots{
+        display:grid;
+        grid-template-columns:repeat(4,1fr);
+        gap:20px
+    }
+    .step,
+    .svc{
+        padding:25px;
+        border-radius:10px;
+        background:var(--l);
+        border-top:3px solid #d7d7da
+    }
+    .step:hover,
+    .svc:hover{
+        border-top-color:var(--g)
+    }
+    .step h3,
+    .svc h3{
+        margin:15px 0 8px
+    }
+    .step p,
+    .svc p{
+        color:var(--m);
+        line-height:1.5;
+        font-size:14px
+    }
+    .num-circle{
+        width:44px;
+        height:44px;
+        border:1px solid var(--g);
+        border-radius:50%;
+        display:grid;
+        place-items:center;
+        color:var(--b7);
+        font-weight:bold
+    }
+/* =====================================================
+   LOTS / AUCTIONS
+===================================================== */
+
+    .lots-sec{
+        background:var(--l)
+    }
+    .lots{
+        grid-template-columns:repeat(3,1fr)
+    }
+    .lot{
+        background:#fff;
+        border-radius:10px;
+        overflow:hidden;
+        box-shadow:0 4px 15px #00000012
+    }
+    .lot-img{
+        height:170px;
+        background:linear-gradient(135deg,#777,#444);
+        display:grid;
+        place-items:center;
+        font-size:64px;
+        position:relative
+    }
+    .tag{
+        position:absolute;
+        top:12px;
+        left:12px;
+        background:var(--g);
+        padding:5px 10px;
+        border-radius:4px;
+        font-size:12px;
+        font-weight:bold
+    }
+    .lot-body{
+        padding:20px
+    }
+    .lot h3{
+        line-height:1.4;
+        margin-bottom:10px
+    }
+    .meta{color:var(--m);
+        font-size:13px
+    }
+    .lot-foot{
+        display:flex;
+        justify-content:space-between;
+        border-top:1px solid #d7d7da;
+        margin-top:15px;
+        padding-top:14px
+    }.price{
+        font:bold 18px Georgia;
+        color:var(--b7)
+    }
+    .details{
+        color:var(--g);
+        font-weight:bold;
+        cursor:pointer
+    }
+/* =====================================================
+   STATISTICS BAND
+===================================================== */
+    .band{
+        background:var(--b9);
+        color:#fff;
+        padding:50px 0
+    }
+    .band .container{
+        display:grid;
+        grid-template-columns:repeat(4,1fr)
+    }
+    .band .cell{
+        text-align:center;
+        border-right:1px solid #c29a4b55
+    }
+    .band .cell:last-child{
+        border:0
+    }
+    .band strong{
+        display:block;
+        color:#e3ce9c;
+        font:bold 38px Georgia
+    }
+    .band span{
+        display:block;
+        color:#ddd;
+        font-size:13px;
+        margin-top:7px
+    }
+/* =====================================================
+   NEWS 6
+📰 Markaz yangiliklari
+📢 Yangi ijara obyektlari haqida e’lonlar
+🏢 Davlat mulkiga oid yangiliklar
+📅 Auksionlar haqida xabarlar
+📄 Yangi hujjatlar va qarorlar
+🎥 Tadbirlar va videolar
+===================================================== */
+    .split{
+        display:grid;
+        grid-template-columns:2fr 1fr;
+        gap:40px
+    }
+    .news{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        gap:18px
+    }
+    .n-card{
+        border:1px solid #d7d7da;
+        padding:20px;
+        border-radius:10px
+    }
+    .date{
+        color:var(--g);
+        font-weight:bold;
+        font-size:12px;
+        margin-bottom:10px
+    }
+    .n-card h3{
+        line-height:1.4;
+        margin-bottom:8px
+    }
+    .n-card p{color:var(--m);
+        font-size:14px;
+        line-height:1.5
+    }
+/* =====================================================
+   DOCUMENTS hujjatlar bo'limi
+===================================================== */
+    .docs{
+        background:var(--l);
+        padding:25px;
+        border-left:4px solid var(--g);
+        border-radius:10px
+    }
+    .doc{
+        padding:13px 0;
+        border-bottom:1px solid #d7d7da;
+        font-size:14px
+    }
+    .doc:last-child{
+        border:0
+    }
+    .doc small{
+        display:block;
+        color:var(--m);
+        margin-top:4px
+    }
+/* =====================================================
+   FOOTER
+🏢 Tashkilot nomi
+📍 Manzil
+📞 Telefon raqami
+📧 Elektron pochta
+🔗 Ijtimoiy tarmoqlar
+📄 Foydali havolalar
+⚖️ Huquqiy ma'lumotlar
+©️ Mualliflik huquqi
+🗺️ Sayt xaritasi
+===================================================== */    
+    footer{
+        background:#2e2e32;
+        color:#ccc;
+        padding:50px 0 0
+    }
+    .f-grid{
+        display:grid;
+        grid-template-columns:1.5fr 1fr 1fr 1.2fr;
+        gap:35px;
+        padding-bottom:40px
+    }
+    .f-grid h4{
+        color:#e3ce9c;
+        margin-bottom:16px
+    }
+    
+    .f-grid a,
+    .f-grid p{
+        display:block;
+        color:#ccc;
+        text-decoration:none;
+        margin:9px 0;
+        font-size:14px;
+        line-height:1.5
+    }
+    .f-bottom{
+        border-top:1px solid #c29a4b44;
+        padding:20px 0;
+        display:flex;
+        justify-content:space-between;
+        font-size:13px
+    }
+/* =====================================================
+   ADMIN PANEL
+Masalan, Davijara kabi saytning Admin Panelida administrator:
+
+👤 Foydalanuvchilarni boshqaradi
+🏢 Davlat mulki obyektlarini qo‘shadi, o‘zgartiradi yoki o‘chiradi
+📋 Arizalarni ko‘rib chiqadi
+📄 Ijara shartnomalarini boshqaradi
+🔨 Auksion ma'lumotlarini boshqaradi
+📰 Yangiliklarni qo‘shadi va tahrirlaydi
+📊 Statistikalarni ko‘radi
+📁 Hujjatlarni joylashtiradi
+📩 Murojaatlarni ko‘rib chiqadi
+👨‍💼 Xodimlar va foydalanuvchilar huquqlarini boshqaradi
+===================================================== */    
+    .admin-panel{
+        max-width:900px;
+        margin:30px auto;
+        padding:25px;
+        background:#fff;
+        border:1px solid #d7d7da;
+        border-radius:10px
+    }
+    .admin-panel input{
+        width:100%;
+        padding:10px;
+        margin:6px 0 12px;
+        border:1px solid #d7d7da;
+        border-radius:5px
+    }
+    .admin-panel button{
+        background:var(--b7);
+        color:#fff;
+        border:0;
+        padding:11px 18px;
+        border-radius:5px;
+        cursor:pointer
+    }
+/* =====================================================
+   RESPONSIVE DESIGN (TABLET)
+   Responsive Design nima qiladi?
+
+Sayt:
+💻 Kompyuter ekraniga moslashadi
+📱 Planshet ekraniga moslashadi
+📲 Telefon ekraniga moslashadi
+Matnlar va rasmlar ekran kengligiga moslashadi
+Menyular kerak bo‘lsa ixchamlashadi
+Tugmalar va inputlar qulay o‘lchamga o'tadi
+
+CSS'da bunga Media Query orqali erishiladi:
+===================================================== */   
+    @media(max-width:900px){
+        .search-row,
+        .steps,
+        .services,
+        .lots,
+        .band .container,
+        .f-grid{
+            grid-template-columns:1fr 1fr
+        }
+        .split{
+            grid-template-columns:1fr
+        }
+        .hero h1{
+            font-size:38px
+        }
+    }
+/* =====================================================
+   RESPONSIVE DESIGN (MOBILE)
+Mobil Responsive Design nimalarni qiladi?
+📱 Sayt telefon ekraniga moslashadi.
+🔤 Matnlar kichikroq va o‘qishga qulay bo‘ladi.
+🖼️ Rasmlar ekran kengligidan oshib ketmaydi.
+🔘 Tugmalar barmoq bilan bosishga qulay bo‘ladi.
+📋 Jadval va menyular ixchamlashadi.
+☰ Navigatsiya menyusi mobil menyuga aylanishi mumkin.
+===================================================== */    
+    @media(max-width:600px){
+        .topbar .container,
+        .header-main{
+            height:auto;
+            padding:10px 20px;
+            display:block
+        }
+        .brand{
+            margin-bottom:15px
+        }
+        .search-row,
+        .steps,
+        .services,
+        .lots,
+        .band .container,
+        .news,
+        .f-grid{
+            grid-template-columns:1fr
+        }
+        .hero-stats{
+            gap:20px;
+            flex-wrap:wrap
+        }
+        nav a{
+            padding:12px 10px;
+            font-size:12px
+        }
+        .sec-title{
+            font-size:27px
+        }
+    }
+
+  
