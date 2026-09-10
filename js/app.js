@@ -146,110 +146,111 @@ async function init() {
         .forEach(x =>
             x.textContent = s.hotline
         );
-}
-/* =====================================================
-   5. LOTLARNI CHIQARISH
-===================================================== */
 
-let lb = document.querySelector("#lots");
+    /* ================================
+       LOTLARNI CHIQARISH
+    ================================= */
 
-if (lb) {
-    lb.innerHTML = o
-        .slice(0, 3)
-        .map(card)
-        .join("");
-}
+    let lb = document.querySelector("#lots");
+
+    if (lb) {
+        lb.innerHTML = o
+            .slice(0, 3)
+            .map(card)
+            .join("");
+    }
 
 
-/* =====================================================
-   6. YANGILIKLARNI CHIQARISH
-===================================================== */
+    /* ================================
+       YANGILIKLARNI CHIQARISH
+    ================================= */
 
-let nb = document.querySelector("#news");
+    let nb = document.querySelector("#news");
 
-if (nb) {
+    if (nb) {
 
-    nb.innerHTML = n
-        .map(x => `
-            <article class="n-card">
+        nb.innerHTML = n
+            .map(x => `
+                <article class="n-card">
 
-                <div class="date">
-                    ${x.date}
-                </div>
+                    <div class="date">
+                        ${x.date}
+                    </div>
 
-                <h3>
+                    <h3>
+                        ${x.title}
+                    </h3>
+
+                    <p>
+                        ${x.text}
+                    </p>
+
+                </article>
+            `)
+            .join("");
+    }
+
+
+    /* ================================
+       HUJJATLARNI CHIQARISH
+    ================================= */
+
+    let db = document.querySelector("#docs");
+
+    if (db) {
+
+        db.innerHTML = d
+            .map(x => `
+                <div class="doc">
+
+                    <b>PDF</b>
                     ${x.title}
-                </h3>
 
-                <p>
-                    ${x.text}
-                </p>
+                    <small>
+                        ${x.date} · ${x.size}
+                    </small>
 
-            </article>
-        `)
-        .join("");
+                </div>
+            `)
+            .join("");
+    }
+    /* ================================
+       HUDUDLARNI SELECTGA QO'SHISH
+    ================================= */
+
+    let r = document.querySelector("#region");
+
+    if (r) {
+
+        [
+            ...new Set(
+                o.map(x => x.region)
+            )
+        ].forEach(x => {
+
+            r.insertAdjacentHTML(
+                "beforeend",
+                `<option>${x}</option>`
+            );
+
+        });
+    }
+    /* ================================
+       BARCHA NATIJALARNI CHIQARISH
+    ================================= */
+
+    let res = document.querySelector("#results");
+
+    if (res) {
+        res.innerHTML = o
+            .map(card)
+            .join("");
+    }
 }
 
 
 /* =====================================================
-   7. HUJJATLARNI CHIQARISH
-===================================================== */
-
-let db = document.querySelector("#docs");
-
-if (db) {
-
-    db.innerHTML = d
-        .map(x => `
-            <div class="doc">
-
-                <b>PDF</b>
-                ${x.title}
-
-                <small>
-                    ${x.date} · ${x.size}
-                </small>
-
-            </div>
-        `)
-        .join("");
-}
-/* =====================================================
-   8. HUDUDLARNI SELECTGA QO'SHISH
-===================================================== */
-
-let r = document.querySelector("#region");
-
-if (r) {
-
-    [
-        ...new Set(
-            o.map(x => x.region)
-        )
-    ].forEach(x => {
-
-        r.insertAdjacentHTML(
-            "beforeend",
-            `<option>${x}</option>`
-        );
-
-    });
-}
-/* =====================================================
-   9. BARCHA NATIJALARNI CHIQARISH
-===================================================== */
-
-let res = document.querySelector("#results");
-
-if (res) {
-    res.innerHTML = o
-        .map(card)
-        .join("");
-}
-
-
-/* =====================================================
-   10. OBYEKTLARNI QIDIRISH
+   5. OBYEKTLARNI QIDIRISH
 ===================================================== */
 
 function searchObjects() {
@@ -289,7 +290,7 @@ function searchObjects() {
             : "Ma'lumot topilmadi.";
 }
 /* =====================================================
-   11. YANGI OBYEKT QO'SHISH
+   6. YANGI OBYEKT QO'SHISH
 ===================================================== */
 
 function addObject() {
@@ -372,11 +373,10 @@ function addObject() {
 
 
 /* =====================================================
-   12. SAHIFA TO'LIQ YUKLANGANDAN KEYIN ISHGA TUSHIRISH
+   7. SAHIFA TO'LIQ YUKLANGANDAN KEYIN ISHGA TUSHIRISH
 ===================================================== */
 
 document.addEventListener(
     "DOMContentLoaded",
     init
 );
-

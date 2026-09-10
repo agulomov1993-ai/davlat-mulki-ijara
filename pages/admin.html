@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="uz"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Admin panel</title><link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../favicon.ico">
+</head>
+<body>
+    <a href="#main" class="skip-link">Asosiy mazmunga o'tish</a>
+    <div class="topbar">
+        <div class="container">
+            <div>☎
+            <span data-phone>+998 71 259-22-58</span>
+             &nbsp; ✉ <span data-email>info@davijara.uz</span> &nbsp; Ishonch telefoni: <span data-hotline>1082</span>
+            </div><div>👁 Maxsus imkoniyatlar &nbsp; O‘Z · Ру · En</div></div>
+        </div><header><div class="container header-main"><a class="brand" href="../index.html" style="text-decoration:none">
+            <div class="logo"><span>D</span></div><div class="brand-text"><b data-site-name>Davijara.uz</b>
+                <small>Davlat mulkini ijaraga berish yagona portali</small>
+            </div>
+        </a>
+        <div>
+            <a class="btn btn-outline" href="login.html">Kirish</a>
+            <a class="btn btn-gold" href="admin.html">Admin panel</a>
+        </div>
+    </div>
+</header>
+<nav>
+    <div class="container">
+        <img src="../images/logo-icon.png" alt="Markaz.uz logotipi">
+        <ul class="nav-list">
+            <li><a href="../index.html">Bosh sahifa</a></li>
+            <li><a href="objects.html">Ijara obyektlari</a></li>
+            <li><a href="#">E-auksion</a></li>
+            <li><a href="services.html">Interaktiv xizmatlar</a></li>
+            <li><a href="docs.html">Normativ hujjatlar</a></li>
+            <li><a href="news.html">Yangiliklar</a></li>
+            <li><a href="#">Markaz haqida</a></li>
+            <li><a href="#">Bog‘lanish</a></li>
+        </ul>
+    </div>
+</nav>
+<main id="main">
+<section>
+    <div class="container">
+        <div class="sec-eyebrow">Boshqaruv</div>
+        <div class="sec-title">Admin panel — demo</div>
+        <div class="admin-panel">
+            <h2>Yangi obyekt qo‘shish</h2>
+            <label>Obyekt nomi</label>
+            <input id="a-title" placeholder="Bo‘sh turgan davlat obyekti">
+            <label>Hudud</label>
+            <input id="a-region" placeholder="Navoiy viloyati">
+            <label>Maydon (m²)</label>
+            <input id="a-area" placeholder="500">
+            <label>Ijara sharti</label>
+            <input id="a-price" placeholder="10 yilgacha tekin">
+            <button onclick="addObject()">Saqlash</button>
+            <p style="margin-top:15px;color:#6e6e75">Demo rejim: ma’lumot brauzer localStorage xotirasida saqlanadi.</p>
+        </div>
+    </div>
+</section>
+</main>
+<footer>
+    <div class="container">
+        <div class="f-grid"><div>
+            <h3 data-site-name>Davijara.uz</h3>
+            <p>Davlat mulki obyektlaridan samarali foydalanish bo‘yicha rasmiy portal.</p>
+            <p>Call-markaz: <b data-hotline>1082</b>
+            </p>
+        </div>
+        <div>
+            <h4>Portal</h4>
+            <a href="objects.html">Ijara obyektlari</a>
+            <a href="services.html">Interaktiv xizmatlar</a>
+            <a href="docs.html">Normativ hujjatlar</a>
+        </div>
+        <div>
+            <h4>Foydali havolalar</h4>
+            <a href="#">davaktiv.uz</a>
+            <a href="#">e-auksion.uz</a>
+            <a href="#">my.gov.uz</a>
+            <a href="#">lex.uz</a>
+        </div>
+        <div>
+            <h4>Bog‘lanish</h4>
+            <p>100000, Toshkent sh.</p>
+            <p data-phone>+998 71 259-22-58</p>
+            <p data-email>info@davijara.uz</p>
+        </div>
+    </div>
+    <div class="f-bottom">
+        <span>© 2026 Davijara.uz</span>
+        <span>Ochiq ma’lumotlar · Maxfiylik siyosati</span>
+    </div>
+</div>
+</footer>
+<script src="../js/app.js"></script>
+</body>
+</html>
