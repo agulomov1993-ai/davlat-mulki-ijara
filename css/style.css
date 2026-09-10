@@ -249,7 +249,7 @@ nav a:hover{
         border-radius:6px;
         padding:0 28px;
         background:var(--b7);
-        color:#0de62a;
+       color:#fff;
         font-weight:bold;
         cursor:pointer
     }
@@ -266,13 +266,15 @@ nav a:hover{
         margin-bottom:32px
     }
     .sec-eyebrow{
-        color:var(--g);
+        color:var(--b9);
         font-size:12px;
         letter-spacing:3px;
         text-transform:uppercase;
         font-weight:bold;
         margin-bottom:8px
     }
+.hero .sec-eyebrow{ 
+   color:#e3ce9c; }
     .sec-title{
         font:bold 34px Georgia;
         color:var(--b9)
@@ -378,7 +380,7 @@ nav a:hover{
         color:var(--b7)
     }
     .details{
-        color:var(--g);
+        color:var(--b7);
         font-weight:bold;
         cursor:pointer
     }
