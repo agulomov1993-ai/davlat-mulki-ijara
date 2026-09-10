@@ -467,10 +467,10 @@ nav a:hover{
         border-radius:10px
     }
     .date{
-        color:var(--g);
-        font-weight:bold;
-        font-size:12px;
-        margin-bottom:10px
+       color:var(--b7);   /* var(--g) o'rniga */
+    font-weight:bold;
+    font-size:12px;
+    margin-bottom:10px
     }
     .n-card h3{
         line-height:1.4;
